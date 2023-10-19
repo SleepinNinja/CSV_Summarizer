@@ -1,0 +1,6 @@
+django
+ipython
+django-crispy-forms
+crispy-bootstrap4
+openpyxl
+xls2xlsx

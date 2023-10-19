@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Home
+{% endblock title %}
+
+{% block content %}
+{% include 'components/navbar.html' %}
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="display-4">Welcome, {{ request.user.username }}!</h1>
+        <p class="lead">We're glad to have you here.</p>
+        <hr class="my-4">
+        <p>Click the button below to upload and summarize CSV.</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Get Started</a>
+    </div>
+</div>
+{% endblock content %}
+    

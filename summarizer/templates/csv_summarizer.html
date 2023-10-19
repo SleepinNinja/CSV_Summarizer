@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Summarize
+{% endblock title %}
+
+{% block content %}
+    {% include 'components/navbar.html' %}
+    <div class="container h-100">
+        <div class="row h-100 justify-content-center align-items-center">
+            <div class="col-6">
+                <div class="text-center">
+                    <h1>{{ file_name }}</h1>
+                    <h4>Sub-heading</h4>
+                    <a type="button" href="{% url 'summarizer:summarize' %}" class="btn btn-primary">Summarize<a>
+                    <a type="button" class="btn btn-secondary">ViewData</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
+    
+    
